@@ -1,11 +1,11 @@
-import SearchBar from './components/SearchBar.jsx';
+import SearchBar from './SearchBar';
 
-function Nav(SearchBar) {
+function Nav({ onSearch }) {
     return (
         <div>
-            <SearchBar />
+            <SearchBar onSearch={onSearch} />
         </div>
     )
 }
 
-export default Nav
+export default Nav;
