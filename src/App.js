@@ -4,6 +4,14 @@ import Nav from './component/Nav'
 import { useState } from 'react';
 
 function App() {
+
+   const [characters, setCharacters] = useState([]);
+
+   const onSearch = () => {
+      setCharacters([...characters, example])
+   }
+
+
    return (
       <div className='App'>
          <Nav />
